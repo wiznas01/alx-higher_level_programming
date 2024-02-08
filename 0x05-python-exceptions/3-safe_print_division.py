@@ -8,7 +8,7 @@ def safe_print_division(a, b):
     - b (int): The denominator.
 
     Returns:
-    - float or None: The result of the division, or None if an exception occurs.
+    - float or None: The result of the division or None if an exception occurs
     """
     result = None
 
@@ -21,5 +21,5 @@ def safe_print_division(a, b):
         print("Inside result: None")
         return None
     if result is not None:
-            print("Inside result: {}".format(result))
-            return result
+        print("Inside result: {}".format(result))
+        return result
