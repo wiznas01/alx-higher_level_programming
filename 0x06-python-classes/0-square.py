@@ -6,4 +6,3 @@ class Square:
     Method:
         No methods defined for an empty square
     """
-    pass
