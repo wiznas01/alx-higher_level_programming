@@ -20,6 +20,7 @@ def safe_print_division(a, b):
     except TypeError:
         print("Inside result: None")
         return None
-    if result is not None:
-        print("Inside result: {}".format(result))
-        return result
+    finally:
+        if result is not None:
+            print("Inside result: {}".format(result))
+            return result
