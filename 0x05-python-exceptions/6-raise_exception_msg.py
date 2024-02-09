@@ -4,7 +4,7 @@ def raise_exception_msg(message=""):
     Raises a NameError with a custom message.
 
     Args:
-    - message (str): The custom message to include in the exception. Defaults to an empty string.
+    - message (str):custom message to include in the exception
 
     Raises:
     - NameError: Always raises a NameError with the provided message.
