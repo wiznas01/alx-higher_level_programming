@@ -10,5 +10,5 @@ class Rectangle:
 
     Attributes:
         No attributes are defined at this point.
-    ""
+    """
 
