@@ -1,17 +1,12 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 class Rectangle:
     """
-    A class representing a rectangle.
+    A simple class representing a rectangle.
+
+    This class is currently empty and can be used as a starting point
+    to define the properties and methods of a rectangle.
+
+    Attributes:
+        No attributes are defined at this point.
     """
-    def __init__(self):
-        """
-        Initializes a new instance of the Rectangle class.
-        """
-
-    def calculate_area(self):
-        """
-        Calculates the area of the rectangle.
-
-        Returns:
-            float: The area of the rectangle.
-        """
+    pass
