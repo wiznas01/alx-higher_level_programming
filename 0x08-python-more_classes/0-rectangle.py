@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""Rectangle module."""
 class Rectangle:
     """
     A simple class representing a rectangle.
