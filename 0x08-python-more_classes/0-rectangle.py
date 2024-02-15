@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Rectangle module."""
 
+
 class Rectangle:
     """
     A simple class representing a rectangle.
@@ -11,4 +12,3 @@ class Rectangle:
     Attributes:
         No attributes are defined at this point.
     """
-
