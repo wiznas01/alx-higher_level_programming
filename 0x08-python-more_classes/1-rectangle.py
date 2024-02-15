@@ -17,8 +17,8 @@ class Rectangle:
             width (int): The width of the rectangle. Default is 0.
             height (int): The height of the rectangle. Default is 0.
         """
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
 
     @property
     def width(self):
@@ -37,10 +37,7 @@ class Rectangle:
             TypeError: If the width is not an integer.
             ValueError: If the width is less than 0.
         """
-        if not isinstance(value, int):
-            raise TypeError("width must be an integer")
-        if value < 0:
-            raise ValueError("width must be >= 0")
+        self._validate_dimension(value, "width")
         self.__width = value
 
     @property
@@ -60,9 +57,23 @@ class Rectangle:
             TypeError: If the height is not an integer.
             ValueError: If the height is less than 0.
         """
-        if not isinstance(value, int):
-            raise TypeError("height must be an integer")
-        if value < 0:
-            raise ValueError("height must be >= 0")
+        self._validate_dimension(value, "height")
         self.__height = value
+
+    def _validate_dimension(self, value, dimension_name):
+        """
+        Validate the dimension value.
+
+        Parameters:
+            value (int): The dimension value.
+            dimension_name (str): The name of the dimension.
+
+        Raises:
+            TypeError: If the value is not an integer.
+            ValueError: If the value is less than 0.
+        """
+        if not isinstance(value, int):
+            raise TypeError(f"{dimension_name} must be an integer")
+        if value < 0:
+            raise ValueError(f"{dimension_name} must be >= 0")
 
