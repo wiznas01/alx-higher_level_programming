@@ -14,6 +14,19 @@ class Rectangle:
     number_of_instances = 0
     print_symbol = "#"
 
+    @classmethod
+    def square(cls, size=0):
+        """
+        Return a new Rectangle instance with width == height == size.
+
+        Parameters:
+            size (int): The size of the square. Default is 0.
+
+        Returns:
+            Rectangle: A new instance of Rectangle representing a square.
+        """
+        return cls(size, size)
+
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """
