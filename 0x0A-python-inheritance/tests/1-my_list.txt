@@ -1,0 +1,13 @@
+# Test cases for MyList class
+
+>>> my_list_instance = MyList([3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5])
+>>> my_list_instance.print_sorted()
+[1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
+
+>>> my_empty_list = MyList([])
+>>> my_empty_list.print_sorted()
+[]
+
+>>> my_single_element_list = MyList([42])
+>>> my_single_element_list.print_sorted()
+[42]
