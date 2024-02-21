@@ -10,4 +10,4 @@ def lookup(obj):
     Returns:
         list: List of strings representing attributes and methods.
     """
-    return [item for item in dir(obj) if not callable(getattr(obj, item))]
+    return [item for item in dir(obj)]
