@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 def uniq_add(my_list=[]):
+
     unique_sum = 0
     seen_numbers = set()
 
@@ -9,6 +10,7 @@ def uniq_add(my_list=[]):
             unique_sum += number
             seen_numbers.add(number)
     return unique_sum
+
 
 if __name__ == "__main__":
 
