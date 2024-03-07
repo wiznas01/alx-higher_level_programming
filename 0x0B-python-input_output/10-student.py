@@ -28,5 +28,8 @@ class Student:
         """
         if (type(attrs) == list and
                 all(type(ele) == str for ele in attrs)):
-            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
-        return self.__dict__
+            result_dict = {'age': getattr(self, 'age')}
+            result_dict.update({k: getattr(self, k) for k in attrs
+                                if k != 'age' and hasattr(self, k)})
+            return result_dict
+        return {'age': self.age, **self.__dict__}
