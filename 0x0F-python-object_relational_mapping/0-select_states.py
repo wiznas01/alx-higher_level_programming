@@ -9,6 +9,7 @@ def list_states(username, password, database):
     cursor = db.cursor()
 
     #Execute the SQL query from query result
+    cursor.execute("SELECT * FROM states ORDER BY id ASC;")
     rows = cursor.fetchall()
 
     #print the results
@@ -16,6 +17,7 @@ def list_states(username, password, database):
         print(row)
 
     #close the database connection
+    cursor.close()
     db.close()
 
 #example usage
